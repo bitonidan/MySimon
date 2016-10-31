@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.mysimon.Simon">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="179dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape_green"
+            android:onClick="Convert_View_Num"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="179dp"
+            android:layout_height="210dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below ="@id/btn_1"
+            android:background="@drawable/button_shape_yellow"
+            android:onClick="Convert_View_Num"
+            android:soundEffectsEnabled="true"
+             />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="179dp"
+            android:layout_height="210dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape_blue"
+            android:onClick="Convert_View_Num"
+            android:soundEffectsEnabled="true"
+            android:layout_toRightOf="@id/btn_1"
+            />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="179dp"
+            android:layout_height="210dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape_red"
+            android:onClick="Convert_View_Num"
+            android:soundEffectsEnabled="true"
+            android:layout_below="@id/btn_2"
+            android:layout_toRightOf="@id/btn_4"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/score"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/score"
+            android:layout_toLeftOf="@+id/btn_3"
+            android:layout_toStartOf="@+id/btn_3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/step" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/step"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/btn_3"
+            android:layout_alignEnd="@+id/btn_3"
+            android:layout_toRightOf="@+id/score"
+            android:layout_toEndOf="@+id/score"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:textColor="@color/colorAccent"/>
+
+
+</RelativeLayout>
+
